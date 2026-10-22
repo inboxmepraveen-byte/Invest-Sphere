@@ -1,0 +1,56 @@
+.details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.details-eyebrow {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.details-header h1 {
+  font-size: 21px;
+  font-weight: 650;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.details-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.details-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.details-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.details-grid .stat-tiles {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 940px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

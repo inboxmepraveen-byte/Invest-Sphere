@@ -1,0 +1,97 @@
+.investment-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.investment-row + .investment-row {
+  margin-top: 8px;
+}
+
+.investment-row-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.type-chip {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 3px 6px;
+  flex-shrink: 0;
+}
+
+.investment-row-name {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.investment-row-name .name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.investment-row-name .sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.investment-row-price {
+  font-size: 13px;
+  color: var(--text);
+  width: 100px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.investment-row-stat {
+  width: 80px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.investment-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .investment-row {
+    flex-wrap: wrap;
+  }
+  .investment-row-price {
+    width: auto;
+    text-align: left;
+    order: 3;
+  }
+  .investment-row-stat {
+    width: auto;
+    text-align: left;
+    order: 4;
+  }
+  .investment-row-actions {
+    order: 5;
+    margin-left: auto;
+  }
+}

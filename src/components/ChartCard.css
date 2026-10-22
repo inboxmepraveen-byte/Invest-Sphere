@@ -1,0 +1,51 @@
+.chart-card {
+  width: 100%;
+}
+
+.chart-period-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.chart-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 6px;
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chart-tab:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.chart-tab.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chart-tooltip {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: var(--shadow-pop);
+}
+
+.chart-tooltip-label {
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.chart-tooltip-value {
+  color: var(--text);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}

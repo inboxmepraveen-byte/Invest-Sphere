@@ -1,0 +1,138 @@
+/* InvestSphere design tokens */
+:root {
+  --bg: #0a0b0d;
+  --bg-elevated: #111318;
+  --card: #15171c;
+  --card-hover: #191c22;
+  --border: #24272e;
+  --border-strong: #32363f;
+  --text: #edeef0;
+  --text-secondary: #9a9fa8;
+  --text-muted: #686e78;
+  --accent: #6d8cff;
+  --accent-soft: rgba(109, 140, 255, 0.14);
+  --positive: #2ecf8a;
+  --positive-soft: rgba(46, 207, 138, 0.12);
+  --negative: #f0596b;
+  --negative-soft: rgba(240, 89, 107, 0.12);
+  --warning: #e8a33d;
+  --purple: #a97fe8;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.45);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+
+  --header-h: 60px;
+  --subnav-h: 44px;
+}
+
+[data-theme="light"] {
+  --bg: #f5f6f8;
+  --bg-elevated: #ffffff;
+  --card: #ffffff;
+  --card-hover: #f9fafb;
+  --border: #e4e6ea;
+  --border-strong: #d3d6dc;
+  --text: #14161a;
+  --text-secondary: #5b606a;
+  --text-muted: #8b909a;
+  --accent: #3f5fe0;
+  --accent-soft: rgba(63, 95, 224, 0.08);
+  --positive: #128a5a;
+  --positive-soft: rgba(18, 138, 90, 0.1);
+  --negative: #d13a4c;
+  --negative-soft: rgba(209, 58, 76, 0.1);
+  --warning: #a86a12;
+  --purple: #7c4fd0;
+  --shadow-card: 0 1px 2px rgba(20, 22, 26, 0.06);
+  --shadow-pop: 0 12px 28px rgba(20, 22, 26, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 6px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
